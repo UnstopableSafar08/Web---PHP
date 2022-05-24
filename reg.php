@@ -11,8 +11,11 @@ if(isset($_POST['sub'])){
     $img="image/".$_FILES['f1']['name'];
     }
     $i="insert into reg(name,username,password,city,image,gender)value('$t','$u','$p','$c','$img','$g')";
-    mysqli_query($con, $i);
-}
+    mysqli_query($con, $i);}
+else{
+        echo 'not connected';
+    }
+
 ?>
 
 <html>
