@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 12, 2019 at 05:21 AM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.1.26
+-- Generation Time: May 24, 2022 at 12:39 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -43,7 +42,8 @@ CREATE TABLE `reg` (
 --
 
 INSERT INTO `reg` (`name`, `username`, `password`, `city`, `image`, `gender`, `id`) VALUES
-('Bikash', 'bikash', 'bikash', 'knp', 'image/images.png', 'male', 2);
+('sagar', 'sagar', 'sagar', 'lko', 'image/Asset 1.png', 'male', 3),
+('dipendra', 'dipendra', 'dipendra', 'knp', 'image/Server_Quotation.jpg', 'male', 4);
 
 --
 -- Indexes for dumped tables
@@ -63,7 +63,7 @@ ALTER TABLE `reg`
 -- AUTO_INCREMENT for table `reg`
 --
 ALTER TABLE `reg`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
